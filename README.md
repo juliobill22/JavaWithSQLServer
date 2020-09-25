@@ -39,8 +39,11 @@ Precisamos preparar o ambiente.
 O último passo é fazer a conexão com o banco. 
 E para isso, analise o código!  
 
-O pulo do gato está aqui: Você precisa colocar na pasta bin "C:\Program Files\Java\jdk1.8.0_111\bin" a dll "sqljdbc_auth.dll" 
-  que está disponível no diretório "C:\Java\Microsoft JDBC Driver 6.0 for SQL Server\sqljdbc_6.0\enu\auth\x64"  
+O pulo do gato está aqui:
+ * Se for conexão por connection string 
+    Você precisa colocar na pasta bin "C:\Program Files\Java\jdk1.8.0_111\bin" a dll "sqljdbc_auth.dll" 
+      que está disponível no diretório "C:\Java\Microsoft JDBC Driver 6.0 for SQL Server\sqljdbc_6.0\enu\auth\x64"  
+ * Se for conexão via serviço, ou seja, adicionando um driver na aba de serviços e criando uma conexão fixa, você precisa colocar na pasta "C:\Windows\System32".   
   
 Se ocorrer o erro "The TCP/IP connection to the host XXX, port 1433 has failed." 
   https://kb.sos-berlin.com/pages/viewpage.action?pageId=17499564  
